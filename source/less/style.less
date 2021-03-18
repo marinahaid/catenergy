@@ -1,0 +1,87 @@
+@import "blocks/normalize";
+@import "./font";
+@import "./variables";
+@import "blocks/page-header";
+@import "blocks/main-nav";
+@import "blocks/page-main";
+@import "blocks/program";
+@import "blocks/operation";
+@import "blocks/about";
+@import "blocks/page-footer";
+@import "blocks/extra";
+@import "blocks/present";
+@import "blocks/advantage";
+@import "blocks/site-list";
+@import "blocks/product";
+@import "blocks/product-item";
+@import "blocks/info";
+@import "blocks/correction";
+@import "blocks/contact";
+@import "blocks/offers";
+@import "blocks/about-slider";
+@import "blocks/catalog-block";
+@import "blocks/about-filter";
+@import "blocks/goods";
+@import "blocks/filter-option";
+@import "blocks/main-form";
+@import "blocks/form-block";
+@import "blocks/green-borded";
+@import "blocks/complex-input";
+@import "blocks/footer-contacts";
+@import "blocks/error";
+
+body {
+  width: 100%;
+  margin: 0;
+  padding: 0;
+  font-family: "Oswald", "Arial", sans-serif;
+  font-size: @font-size;
+  line-height: @line-height;
+  background-color: @block-background;
+  color: @block-color;
+}
+
+.img {
+  min-width: 100%;
+  height: auto;
+}
+
+.visually-hidden {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  margin: -1px;
+  border: 0;
+  padding: 0;
+  white-space: nowrap;
+  clip-path: inset(100%);
+  clip: rect(0 0 0 0);
+  overflow: hidden;
+}
+
+.button {
+  background-color: @button-background;
+  color: @button-color;
+  font-weight: 400;
+  text-align: center;
+  vertical-align: middle;
+  text-transform: uppercase;
+  border: none;
+  outline: none;
+  display: block;
+
+  &:hover,
+  &:focus {
+    background-color: #5eaa2f;
+    cursor: pointer;
+  }
+
+  &:active {
+    background-color: #5eaa2f;
+    color: rgba(255, 255, 255, 0.3);
+  }
+}
+
+a {
+  text-decoration: none;
+}

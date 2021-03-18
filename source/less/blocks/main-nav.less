@@ -1,0 +1,132 @@
+.main-nav {
+  position: relative;
+  width: 100%;
+}
+
+.main-nav__wrapper {
+  margin: 0 auto;
+}
+
+.main-nav__list {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
+@media (max-width: @mobile-width-only) {
+  .main-nav--closed .site-list__item {
+    display: none;
+  }
+
+  &--active {
+    display: block;
+  }
+}
+
+.main-nav__toggle {
+  position: absolute;
+  width: 30px;
+  height: 25px;
+  top: 0;
+  right: 0;
+  border: none;
+  cursor: pointer;
+  z-index: 2;
+  display: block;
+  background-color: #ffffff;
+  /* outline: none !important;*/
+}
+
+.main-nav--closed .main-nav__toggle::before {
+  content: "";
+  position: absolute;
+  top: 21px;
+  left: 16px;
+  width: 25px;
+  height: 2px;
+  background-color: #111111;
+  box-shadow: 0 8px 0 0 #111111, 0 16px 0 0 #111111;
+  transform: rotateX(45deg);
+}
+
+.main-nav--opened .main-nav__toggle {
+  top: 0;
+  left: auto;
+
+  &::before,
+  &::after {
+    content: "";
+    position: absolute;
+    width: 23px;
+    height: 2px;
+    top: -29px;
+    left: 28px;
+  }
+
+  &::before {
+    transform: rotate(45deg);
+  }
+
+  &::after {
+    transform: rotate(-45deg);
+  }
+}
+
+.main-nav--nojs .main-nav--toggle {
+  display: none;
+}
+
+.main-nav--nojs .main-nav__wrapper {
+  position: static;
+  min-height: 0;
+}
+
+.main-nav--nojs .site-list__item {
+  display: block;
+}
+
+@media (min-width: @tablet-width) {
+  .main-nav {
+    display: flex;
+    width: 100%;
+    justify-content: flex-end;
+    margin: 0;
+  }
+
+  .main-nav__wrapper {
+    margin: 0;
+  }
+
+  .main-nav__list {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    padding-top: 13px;
+  }
+
+  .main-nav__toggle {
+    display: none;
+  }
+}
+
+@media (min-width: @desktop-width) {
+  .main-nav {
+    width: auto;
+    padding-top: 30px;
+    padding-left: 238px;
+  }
+
+  .index .main-nav {
+    padding-left: 50%;
+  }
+
+  .main-nav__toggle {
+    display: none;
+  }
+
+  .main-nav__list {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+  }
+}
