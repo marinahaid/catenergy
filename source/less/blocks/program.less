@@ -1,0 +1,349 @@
+.program {
+  width: 100%;
+  padding-top: 46px;
+}
+
+.program__wrapper {
+  margin: 20px;
+}
+
+.program-list {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
+.program__item {
+  background-color: #f2f2f2;
+  width: auto;
+  display: block;
+  margin-bottom: 20px;
+  padding-bottom: 19px;
+  position: relative;
+}
+
+.program__item::before {
+  content: "";
+  width: 50px;
+  height: 50px;
+  background-color: #68b738;
+  display: flex;
+  border-radius: 50%;
+  top: 23px;
+  left: 21px;
+  position: absolute;
+}
+
+.program__item--slim::after {
+  content: "";
+  width: 35px;
+  height: 49px;
+  background-image: url("../img/icon-cat-slim.svg");
+  background-repeat: no-repeat;
+  background-position: center;
+  position: absolute;
+  top: 20px;
+  left: 30px;
+}
+
+.program__item--fat::after {
+  content: "";
+  width: 67px;
+  height: 49px;
+  background-image: url("../img/icon-cat-pro.svg");
+  background-repeat: no-repeat;
+  background-position: center;
+  position: absolute;
+  left: 12px;
+  top: 22px;
+}
+
+.program__title {
+  color: #111111;
+  font-weight: 400;
+  text-transform: uppercase;
+  font-size: 24px;
+  padding-top: 38px;
+  margin: 0 0 40px 92px;
+}
+
+.program__description {
+  font-size: @font-size;
+  line-height: @line-height;
+  font-family: "ArialTM", sans-serif;
+  color: #444444;
+  padding: 0;
+  margin: 0;
+  border-bottom: 1px solid #d9d9d9;
+  margin-top: 0;
+  margin-left: 20px;
+  margin-right: 29px;
+  margin-bottom: 20px;
+  padding-bottom: 21px;
+}
+
+.program__link {
+  font-size: 16px;
+  line-height: 16px;
+  color: #111111;
+  text-transform: uppercase;
+  padding-left: 20px;
+  position: relative;
+
+  &:active {
+    color: #111111;
+    opacity: 0.3;
+  }
+}
+
+.program__link::before {
+  content: "";
+  width: 20px;
+  height: 3px;
+  margin: 5px 0;
+  background: #111111;
+  position: absolute;
+  left: 115px;
+
+  &:active {
+    opacity: 0.3;
+  }
+}
+
+.program__link::after {
+  content: "";
+  width: 0;
+  height: 0;
+  position: absolute;
+  top: 5px;
+  left: 134px;
+  border-width: 5px 0 5px 8px;
+  border-style: solid;
+  border-color: transparent #111111;
+
+  &:active {
+    opacity: 0.3;
+  }
+}
+
+@media (min-width: @tablet-width) {
+  .program {
+    width: 100%;
+    padding-top: 41px;
+  }
+
+  .program__wrapper {
+
+    margin: 0 30px;
+  }
+
+  .program__selection {
+    width: 245px;
+    padding-top: 18px;
+    padding-bottom: 18px;
+    font-size: 20px;
+  }
+
+  .program__link {
+    font-size: 20px;
+    line-height: 20px;
+    padding-left: 0;
+    padding-top: 0;
+  }
+
+  .program__link::before {
+    content: "";
+    width: 20px;
+    height: 3px;
+    margin: 8px 0;
+  }
+
+  .program__link::after {
+    content: "";
+    top: 10px;
+  }
+
+  .program__item {
+    width: auto;
+    margin: 0 auto;
+    margin-bottom: 30px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    padding-top: 75px;
+    padding-bottom: 60px;
+    padding-left: 50px;
+    padding-right: 269px;
+  }
+
+  .program__item--fat {
+    padding-right: 310px;
+  }
+
+  .program__item::before {
+    content: "";
+    background-color: #68b738;
+    width: 200px;
+    height: 200px;
+    border-radius: 50%;
+    top: 93px;
+    left: unset;
+    position: absolute;
+    right: 60px;
+  }
+
+  .program__item--slim::after {
+    content: "";
+    width: 144px;
+    height: 194px;
+    background-image: url("../img/icon-cat-slim.svg");
+    background-repeat: no-repeat;
+    background-position: center;
+    top: 80px;
+    left: auto;
+    position: absolute;
+    right: 89px;
+  }
+
+  .program__item--fat::after {
+    content: "";
+    width: 268px;
+    height: 113px;
+    background-image: url("../img/icon-cat-pro.svg");
+    background-repeat: no-repeat;
+    background-position: center;
+    position: absolute;
+    bottom: unset;
+    left: unset;
+    right: 27px;
+    top: 134px;
+  }
+
+  .program__description {
+    width: 372px;
+    font-size: 16px;
+    line-height: 24px;
+    border: none;
+    margin: 0;
+    padding-bottom: 54px;
+  }
+
+  .program__title {
+    font-size: 36px;
+    padding: 0;
+    margin: 0 0 25px 0;
+    line-height: 40px;
+  }
+
+  .description-fat {
+    width: 340px;
+  }
+
+  .program-text {
+    padding-bottom: 20px;
+  }
+}
+
+@media (min-width: @desktop-width) {
+  .program {
+    width: 100%;
+    padding-top: 0;
+
+    padding-bottom: 59px;
+    margin: 0 auto;
+  }
+
+  .program__wrapper {
+    max-width: 1220px;
+    margin: 0 auto;
+  }
+
+  .program-list {
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    margin: 0 auto;
+    padding-left: 0;
+  }
+
+  .program__item {
+    background-color: #f2f2f2;
+    margin: 0;
+    padding: 0 0 58px 0;
+    width: 46.9%;
+    display: block;
+    position: relative;
+  }
+
+  .program__item::before {
+    content: "";
+    display: block;
+    width: 100px;
+    height: 100px;
+    background-color: #68b738;
+    position: absolute;
+    left: 53px;
+    border-radius: 50%;
+    top: 46px;
+  }
+
+  .program__item--fat::after {
+    content: "";
+    width: 134px;
+    height: 57px;
+    background-image: url("../img/icon-cat-pro.svg");
+    background-repeat: no-repeat;
+    background-position: center;
+    position: absolute;
+    top: 67px;
+    left: 34px;
+  }
+
+  .program__item--slim::after {
+    content: "";
+    width: 71px;
+    height: 97px;
+    background-image: url("../img/icon-cat-slim.svg");
+    background-repeat: no-repeat;
+    background-position: center;
+    position: absolute;
+    left: 66px;
+    top: 41px;
+  }
+
+  .program__title {
+    font-size: 36px;
+    width: auto;
+    padding: 76px 0 47px 214px;
+  }
+
+  .program__description {
+    width: 470px;
+    font-size: 16px;
+    line-height: 24px;
+    border-bottom: none;
+    margin-left: 53px;
+    padding-bottom: 31px;
+    margin-right: 63px;
+  }
+
+  .program__link {
+    font-size: 20px;
+    line-height: 20px;
+    margin-left: 53px;
+    padding: 0;
+  }
+
+  .program-text {
+    width: 500px;
+  }
+
+  .program__link::before {
+    left: 132px;
+  }
+
+  .program__link::after {
+    left: 148px;
+  }
+}

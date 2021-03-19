@@ -1,0 +1,173 @@
+.contact {
+  width: 100%;
+  position: relative;
+}
+
+.contact-item label {
+  font-size: 16px;
+  line-height: @line-height;
+  color: #222222;
+  text-transform: uppercase;
+  padding-top: 18px;
+  padding-right: 5px;
+}
+
+.contact__item {
+  display: flex;
+  flex-direction: row;
+  margin-bottom: 14px;
+}
+
+.contact__list {
+  margin: 0 auto;
+  list-style: none;
+  margin: 32px 20px 41px;
+  padding: 0;
+}
+
+.appointment-label--phone {
+  margin-right: 20px;
+}
+
+.link-email {
+  width: 18px;
+  height: 14px;
+  position: absolute;
+}
+
+.link-phone {
+  width: 21px;
+  height: 21px;
+  position: absolute;
+}
+
+.img-email-icon {
+  width: 21px;
+}
+
+.img-phone-icon {
+  width: 21px;
+}
+
+.contact-link {
+  margin-top: -44px;
+  margin-left: -29px;
+
+  &:active {
+    fill: #68b738;
+  }
+
+  &:invalid {
+    fill: #ff8282;
+  }
+}
+
+.contact__comments {
+  max-width: 100%;
+  position: relative;
+  margin-bottom: 39px;
+}
+
+.contact__comments-item {
+  margin: 34px 20px 0;
+}
+
+.contact__area {
+  width: calc(100% - 29px);
+  border: 1px solid #cdcdcd;
+  resize: vertical;
+  color: #444;
+  font-size: 16px;
+  line-height: 18px;
+  text-transform: uppercase;
+  height: 124px;
+  padding: 12px 15px 12px 13px;
+
+  &:hover,
+  &:focus {
+    border: 1px solid #cdcdcd;
+  }
+
+  &:active {
+    border: 1px solid #444444;
+  }
+
+  &:invalid {
+    border: 1px solid #ff8282;
+  }
+}
+
+@media (min-width: @tablet-width) {
+  .contact {
+    margin-top: 55px;
+  }
+
+  .contact__list {
+    width: auto;
+    margin: 75px 66px 83px 71px;
+    padding: 0;
+  }
+
+  .contact__item {
+    margin-bottom: 18px;
+  }
+
+  .contact__item label {
+    font-size: 20px;
+    line-height: 20px;
+  }
+
+  .appointment-label--phone {
+    width: 62px;
+  }
+
+  .appointment-label--phone {
+    width: 83px;
+  }
+
+  .contact__list-commit {
+    max-width: 90%;
+    margin: 0 auto;
+    padding-top: 88px;
+    padding-bottom: 87px;
+  }
+
+  .contact__area {
+    font-size: 20px;
+    line-height: 30px;
+    min-height: 149px;
+  }
+
+  .contact__comments-item {
+    margin: 79px 69px 0;
+  }
+
+  .contact__comments {
+    max-width: 100%;
+    position: relative;
+    margin-bottom: 83px;
+  }
+}
+
+@media (min-width: @desktop-width) {
+  .contact__list {
+    width: 100%;
+    max-width: 1220px;
+    margin: 0 auto;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    padding-bottom: 56px;
+    margin-top: 74px;
+  }
+
+  .contact__item {
+    width: 47%;
+    padding-bottom: 15px;
+  }
+
+  .contact__comments-item {
+    margin: 75px auto 0;
+    max-width: 1220px
+  }
+}

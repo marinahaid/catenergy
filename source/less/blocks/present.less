@@ -1,0 +1,118 @@
+.goods__present {
+  width: 88%;
+  margin: 0 auto;
+  position: relative;
+  display: block;
+  min-height: 280px;
+  background-image: url("../img/gift-photo-mobile@1x.jpg");
+  background-repeat: no-repeat;
+  background-position: center;
+  padding-top: 87px;
+
+  @media (min-resolution: @retina-dpi),
+  (min-resolution: @retina-dppx) {
+    background-image: url("../img/gift-photo-mobile@2x.jpg");
+    background-size: cover;
+  }
+}
+
+.goods__present-text {
+  width: 170px;
+  font-size: 16px;
+  line-height: 20px;
+  font-family: "Arial", sans-serif;
+  padding-top: 140px;
+  text-align: center;
+  padding-left: 0;
+  display: block;
+  vertical-align: top;
+  margin: 0 auto;
+  position: relative;
+  color: #ffffff;
+}
+
+.goods__present-text::after {
+  content: "";
+  width: 56px;
+  height: 61px;
+  position: absolute;
+  background-image: url("../img/gift-present-mobil.png");
+  background-repeat: no-repeat;
+  left: 50%;
+  margin-top: 21px;
+  transform: translateX(-50%);
+  color: #ffffff;
+  top: -3px;
+
+  @media (min-resolution: @retina-dpi),
+  (min-resolution: @retina-dppx) {
+    background-image: url("../img/gift-present-mobil@2x.png");
+    background-size: cover;
+  }
+}
+
+@media (min-width: @tablet-width) {
+  .goods__present {
+    width: auto;
+    margin: 0 30px;
+    min-height: 111px;
+  }
+
+  .goods__present-image {
+    width: 92%;
+    padding-top: 58px;
+    background-image: url("../img/gift-photo-tablet@1x.jpg");
+
+    @media (min-resolution: @retina-dpi),
+    (min-resolution: @retina-dppx) {
+      background-image: url("../img/gift-photo-tablet@2x.jpg");
+      background-size: cover;
+    }
+  }
+
+  .goods__present-text::after {
+    left: 3px;
+    top: 22px;
+  }
+
+  .goods__present-text {
+    text-align: left;
+    padding-left: 309px;
+    margin-top: -66px;
+    padding-top: 50px;
+  }
+}
+
+@media (min-width: @desktop-width) {
+  .goods__present {
+    width: 333px;
+    margin: 0 0 0 82px;
+    padding: 0;
+  }
+
+  .goods__present-image {
+    width: 245px;
+    min-height: 100%;
+    padding-top: 84px;
+    background-image: url("../img/gift-photo-desktop@1x.jpg");
+
+    @media (min-resolution: @retina-dpi),
+    (min-resolution: @retina-dppx) {
+      background-image: url("../img/gift-photo-desktop@2x.jpg");
+      background-size: cover;
+    }
+  }
+
+  .goods__present-text {
+    text-align: center;
+    padding-left: 0;
+    margin-top: 0;
+    padding-top: 187px;
+  }
+
+  .goods__present-text::after {
+    top: 44px;
+    left: 50%;
+    transform: translateX(-50%);
+  }
+}

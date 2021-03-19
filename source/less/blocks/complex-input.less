@@ -1,0 +1,115 @@
+.complex-input__wrap {
+  position: relative;
+  width: 100%;
+}
+
+.complex-input__input {
+  color: #444444;
+  font-size: 16px;
+  line-height: @line-height;
+  text-transform: uppercase;
+  border: 1px solid #cdcdcd;
+  background-color: transparent;
+  width: calc(100% - 56px);
+  display: block;
+  position: relative;
+  padding-right: 40px;
+  margin: 0;
+  padding: 13px 40px 13px 15px;
+
+  &:hover,
+  &:focus {
+    border: 1px solid #cdcdcd;
+  }
+
+  &:active {
+    border: 1px solid #444444;
+  }
+
+  &:invalid {
+    border: 1px solid #ff8282;
+  }
+}
+
+.complex-input__label {
+  margin-right: 10px;
+  font-size: 16px;
+  text-transform: uppercase;
+  display: flex;
+  align-items: center;
+}
+
+.complex-input__icon {
+  position: absolute;
+  fill: #444444;
+
+  &:active {
+    fill: #68b738;
+  }
+
+  &:invalid {
+    fill: #ff8282;
+  }
+}
+  .complex-input__input:active + .complex-input__icon,
+  .complex-input__input:focus + .complex-input__icon{
+    fill: #68b738;
+  }
+.complex-input__icon--email {
+  right: 7px;
+  top: 16px;
+  width: 28px;
+  height: 31px;
+}
+
+.complex-input__icon--phone {
+  height: 20px;
+  width: 21px;
+  right: 12px;
+  top: 13px;
+}
+
+@media (min-width: @tablet-width) {
+  .complex-input__input {
+    font-size: 20px;
+    line-height: 20px;
+    padding: 13px 39px 9px 21px;
+    width: calc(100% - 62px);
+  }
+
+  .complex-input__label {
+    margin-right: 17px;
+  }
+
+  .complex-input__icon--email {
+    right: 10px;
+    top: 21px;
+    width: 28px;
+    height: 31px;
+  }
+
+  .complex-input__icon--phone {
+    height: 20px;
+    width: 21px;
+    right: 17px;
+    top: 18px;
+  }
+
+}
+
+@media (min-width: @desktop-width) {
+  .complex-input {
+    display: flex;
+  }
+
+  .complex-input__label {
+    margin-right: 20px;
+  }
+
+  .complex-input__input {
+    color: #444444;
+    font-size: 20px;
+    line-height: 20px;
+    padding-right: 40px;
+  }
+}

@@ -1,0 +1,22 @@
+.filter-option {
+  font-size: 16px;
+  line-height: @line-height;
+  color: #222222;
+  text-transform: uppercase;
+
+  &:active {
+    opacity: 0.3;
+  }
+}
+
+.filter-input[type="checkbox"],
+.filter-input[type="radio"] {
+  display: none;
+}
+
+@media (min-width: @tablet-width) {
+  .filter-option {
+    font-size: 20px;
+    line-height: 20px;
+  }
+}

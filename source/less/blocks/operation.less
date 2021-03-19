@@ -1,0 +1,221 @@
+.operation {
+  width: 100%;
+}
+
+.operation__container {
+  margin: 0 20px;
+}
+
+.operation__list {
+  list-style: none;
+  padding: 0;
+  margin: 0 0 38px;
+}
+
+.operation__title {
+  font-size: 35px;
+  line-height: 60px;
+  font-family: @font-family;
+  font-weight: 400;
+  margin: 0;
+  padding-bottom: 28px;
+}
+
+.operation__item {
+  position: relative;
+  padding-left: 80px;
+  min-height: 60px;
+  margin-bottom: 21px;
+}
+
+.operation__item::before {
+  content: "";
+  position: absolute;
+  display: block;
+  background-color: #68b738;
+  width: 60px;
+  height: 60px;
+  background-repeat: no-repeat;
+  background-position: center;
+  top: 0;
+  left: 0;
+}
+
+.operation__item-component {
+  margin: 0;
+  padding: 0;
+  font-family: "ArialTM", sans-serif;
+  font-size: 14px;
+  line-height: 18px;
+  color: #444444;
+}
+
+.operation__item--food::before {
+  background-image: url("../img/advantage-1-mobile.png");
+  background-size: 26px 29px;
+
+  @media (min-resolution: @retina-dpi), (min-resolution: @retina-dppx) {
+    background-image: url("../img/advantage-1mobile@2x.png");
+  }
+}
+
+.operation__item--kind::before {
+  background-image: url("../img/advantage-2-mobile.png");
+  background-size: 29px 31px;
+
+  @media (min-resolution: @retina-dpi), (min-resolution: @retina-dppx) {
+    background-image: url("../img/advantage2mobile@2x.png");
+  }
+}
+
+.operation__item--saving::before {
+  background-image: url("../img/advantage-3mobile.png");
+  background-size: 23px 30px;
+
+  @media (min-resolution: @retina-dpi), (min-resolution: @retina-dppx) {
+    background-image: url("../img/advantage-3-mobile@2x.png");
+  }
+}
+
+.operation__item--result::before {
+  background-image: url("../img/advantage-4-mobile.png");
+  background-size: 26px 31px;
+
+  @media (min-resolution: @retina-dpi), (min-resolution: @retina-dppx) {
+    background-image: url("../img/advantage-4-mobile@2x.png");
+  }
+}
+
+@media (min-width: @tablet-width) {
+  .operation {
+    width: 100%;
+    border-bottom: none;
+    position: relative;
+  }
+
+  .operation::after {
+    content: "";
+    width: 100%;
+    position: absolute;
+    bottom: 29px;
+    left: 0;
+    display: block;
+    border-top: 1px solid #cccccc;
+    height: 1px;
+  }
+
+  .operation__container {
+    padding-right: 90px;
+    margin: 0 30px;
+  }
+
+  .operation__list {
+    width: 100%;
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    padding-bottom: 0;
+    flex-wrap: wrap;
+  }
+
+  .operation__title {
+    font-size: 60px;
+    line-height: 60px;
+    margin: 0;
+    margin-bottom: 73px;
+    padding-top: 14px;
+    padding-bottom: 0;
+  }
+
+  .operation__item-component {
+    position: relative;
+    margin: 0;
+    padding: 0;
+    line-height: 24px;
+    padding-bottom: 6px;
+    font-family: "ArialTM", sans-serif;
+    font-size: 15px;
+  }
+
+  .operation__item {
+    width: 36%;
+    position: relative;
+    padding-top: 112px;
+    min-height: 120px;
+    margin-bottom: 85px;
+    padding-left: 0;
+  }
+
+  .operation__item::before {
+    width: 80px;
+    height: 80px;
+  }
+
+  .operation__item::after {
+    color: #f2f2f2;
+    font-size: 281px;
+    position: absolute;
+    margin: 0;
+    padding: 0;
+    z-index: -1;
+    top: 0;
+    right: 0;
+    display: block;
+    line-height: 202px;
+    text-align: right;
+  }
+
+  .operation__item--food::after {
+    content: "1";
+  }
+
+  .operation__item--kind::after {
+    content: "2";
+  }
+
+  .operation__item--saving::after {
+    content: "3";
+  }
+
+  .operation__item--result::after {
+    content: "4";
+  }
+}
+
+@media (min-width: @desktop-width) {
+  .operation__container {
+    max-width: 1220px;
+    margin: 0 auto;
+    padding-right: 0;
+  }
+
+  .operation__title {
+    font-size: 60px;
+    line-height: 60px;
+    margin: 0 0 73px;
+    padding-bottom: 0;
+  }
+
+  .operation__item {
+    width: 20%;
+    margin-bottom: 54px;
+    position: relative;
+    padding-top: 112px;
+  }
+
+  .operation__list {
+    justify-content: space-between;
+    padding-bottom: 0;
+  }
+
+  .operation::after {
+    display: none;
+  }
+
+  .operation__item::after {
+    right: 10px;
+  }
+}

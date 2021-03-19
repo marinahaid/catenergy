@@ -1,0 +1,174 @@
+.offers {
+  width: 100%;
+  position: relative;
+  padding-bottom: 33px;
+}
+
+.offers__wrap {
+  margin: 0 20px;
+}
+
+.offers__filter-list {
+  padding: 0;
+  margin: 0;
+  list-style: none;
+  margin-top: 39px;
+}
+
+.offers__container-site {
+  margin: 0 auto;
+  border: none;
+  padding: 0;
+  margin-bottom: 18px;
+}
+
+.offers__filter-option {
+  margin-bottom: 24px;
+}
+
+.offers__selection-button {
+  width: 100%;
+  padding: 12px 0 12px;
+  margin-bottom: 21px;
+}
+
+.offers__necessary {
+  font-size: @font-size;
+  line-height: 16px;
+  font-family: "Arial", sans-serif;
+  color: #444444;
+  padding: 0;
+  text-align: center;
+  margin: 0;
+}
+
+@media (min-width: @tablet-width) {
+  .offers__wrap {
+    margin: 65px 70px 40px;
+  }
+
+  .offers__filter-name {
+    font-size: 36px;
+    line-height: 36px;
+    margin-top: -59px;
+    width: 235px;
+    margin-left: 19px;
+  }
+
+  .check-list::before {
+    content: "";
+    width: 40px;
+    height: 40px;
+    margin: -6px 0 0 -45px;
+  }
+
+  .filter-input-checkbox:checked + .check-list::after {
+    content: "";
+    width: 21px;
+    height: 16px;
+    margin: 0 -30px;
+  }
+
+  .offers__filter-list {
+    width: auto;
+
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    margin: 0;
+    padding: 0;
+  }
+
+  .offers__filter-option {
+    width: 45%;
+    padding-bottom: 29px;
+  }
+
+  .check-list {
+    padding-left: 43px;
+  }
+
+  .check-list::before {
+    content: "";
+    width: 40px;
+    height: 40px;
+  }
+
+  .filter-input-checkbox {
+    padding-left: 10px;
+  }
+
+  content: "";
+
+  .selection-button {
+    width: 283px;
+  }
+
+  .offers__bottom {
+    width: 521px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    margin-left: 0;
+    padding-bottom: 0;
+    align-items: center;
+  }
+
+  .offers__container-site {
+    margin: 0 auto 14px;
+  }
+
+  .offers__necessary {
+    font-size: 16px;
+  }
+
+  .offers__selection-button {
+    width: 283px;
+    font-size: 20px;
+    line-height: 20px;
+    padding: 15px 0;
+    margin-left: 0;
+    margin-bottom: 0;
+  }
+}
+
+@media (min-width: @desktop-width) {
+  .offers__wrap {
+    max-width: 1220px;
+    margin: 0 auto;
+  }
+
+  /* .offers__filter-name {
+    padding: 35px 0 17px 45px;
+  }*/
+
+  .offers__filter-list {
+    width: 100%;
+    padding: 0;
+    padding-top: 75px;
+  }
+
+  .offers__filter-option {
+    width: 18%;
+  }
+
+  .offers__bottom {
+    width: 878px;
+  }
+
+  .check-list {
+    padding-left: 0;
+  }
+
+  .offers__selection-button {
+    width: 568px;
+    margin-top: 13px;
+  }
+
+  .offers__necessary {
+    width: 180px;
+    font-size: 16px;
+    padding-top: 16px;
+  }
+}
